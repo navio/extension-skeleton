@@ -1,4 +1,6 @@
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
   entry: {
@@ -19,6 +21,13 @@ devtool: 'inline-source-map',
       },
     ],
   },
+  plugins: [
+    new CopyPlugin({
+      patterns: [
+        { from: 'assets' },
+      ],
+    }),
+  ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
