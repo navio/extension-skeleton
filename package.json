@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "Alberto N. 🦑 <alnavarro@gmail.com>",
   "license": "MIT",
+  "registry": "https://registry.npmjs.org/",
   "scripts": {
     "build": "npx webpack --mode='production' --env min",
     "start": "npx webpack -w --progress",
