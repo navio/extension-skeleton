@@ -6,16 +6,17 @@ module.exports = {
   entry: {
     background:'./src/background.ts',
     content: './src/content.ts',
-    popup: `./src/popup.ts`
+    popup: `./src/popup`,
+    options: `./src/options`
   },
-devtool: 'inline-source-map',
+// devtool: 'inline-source-map',
   resolve: {
     extensions: [ '.tsx', '.ts', '.js' ],
   },
   module: {
     rules: [
       {
-        test: /\.ts?$/,
+        test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
