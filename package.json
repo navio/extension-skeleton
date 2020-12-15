@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "Alberto N. 🦑 <alnavarro@gmail.com>",
   "license": "MIT",
+  "registry": "https://registry.npmjs.org/",
   "scripts": {
     "build": "npx webpack --mode='production' --env min",
     "start": "npx webpack -w --progress",
@@ -22,5 +23,8 @@
     "@types/react": "^17.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
+  },
+  "dependencies": {
+    "podcastsuite": "^1.1.1"
   }
 }
