@@ -8,7 +8,7 @@ import { initializeOptionsResponse } from "../options/actions";
 const reducer: BackgroundEventReducer = (message, sender, sendResponse) => {
   switch (message.action) {
     case BACKGROUND_EVENTS.INIT_POPUP:
-      sendResponse(initializeResponsePopUp('Phonograph'));
+      sendResponse(initializeResponsePopUp('Pop Up Message'));
       return true;
     case BACKGROUND_EVENTS.INIT_OPTIONS:
       sendResponse(initializeOptionsResponse("Welcome to Options"));
