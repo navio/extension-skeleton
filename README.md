@@ -6,5 +6,6 @@ It includes:
 
 * Background Task
 * Inected Content
+* Options Page
 * PopUp
 * React & TS
